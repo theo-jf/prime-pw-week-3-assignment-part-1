@@ -10,10 +10,9 @@ console.log('Animals are: ', animalArray);
 // 1.a. TODO: Make an array with some favorite foods
 let foodArray = ["shrimp", "pesto", "sushi"];
 
-
 // 1.b. TODO: Log your array of foods to the console with a message, similar 
 //      to the example above
-console.log("Some of my favorite foods: ", foodArray);
+console.log("Some of my favorite foods are:", foodArray.join(", "));
 
 
 // 2. Array.length - tells you how many items are in the array
@@ -52,7 +51,7 @@ console.log('Added an animal to end,', animalArray);
 
 // 4.a. TODO: Add a new food at the end of your array & log the array
 foodArray.push("fries");
-console.log(foodArray[foodArray.length - 1]);
+console.log("Food added to the end: ", foodArray.join(", "));
 
 
 // Example: Remove the last animal by using Array.pop
@@ -64,7 +63,7 @@ console.log('The animals are now', animalArray);
 //      log both the food removed and the updated array
 let removedFood = foodArray.pop();
 console.log(`${removedFood} has been removed`);
-console.log("foodArray now contains ", foodArray);
+console.log("foodArray now contains ", foodArray.join(", "));
 
 
 // Example: Add an animal to the beginning using Array.unshift
@@ -73,7 +72,7 @@ console.log(`Added an animal to beginning: ${animalArray}`);
 
 // 4.c. TODO: Add a food at the beginning of the array & log the array
 foodArray.unshift("crab");
-console.log("foodArray now contains ", foodArray);
+console.log("foodArray now contains ", foodArray.join(", "));
 
 
 // Example: Remove the first animal using Array.shift
@@ -85,7 +84,7 @@ console.log('The animals are now', animalArray);
 //     log both the food removed and the updated array
 removedFood = foodArray.shift();
 console.log(`${removedFood} has been removed`);
-console.log("foodArray now contains ", foodArray);
+console.log("foodArray now contains ", foodArray.join(", "));
 
 // 4.e (STRETCH) TODO: Replace the second food in your array
 //      with another one of your favorite foods.
@@ -97,7 +96,7 @@ console.log(`${foodArray[1]} is now the second entry in foodArray`);
 //     in reverse alphabetical order. Log the array.
 foodArray.sort();
 foodArray.reverse();
-console.log("The new order of foodArray is ", foodArray);
+console.log("The new order of foodArray is ", foodArray.join(", "));
 
 // 4.g (STRETCH) TODO: Convert your array to a string
 //     putting the word "and" between each item.
